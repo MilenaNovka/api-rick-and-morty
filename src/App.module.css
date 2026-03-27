@@ -1,0 +1,28 @@
+.logo{
+    width: 40%;
+    animation: fromTop 500ms ease-in-out;
+}
+
+@keyframes fromTop{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
+
+.wrapCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (width <= 1000px){
+    .logo {
+        width: 80%;
+    }
+}
